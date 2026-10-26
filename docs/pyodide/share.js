@@ -3,9 +3,9 @@ function createSketchUrl() {
   const userCode = editor.getSession().getValue();
 
   const encodedUserCode = btoa(encodeURIComponent(userCode));
-
+  const enci = StringUtils.abbreviate(encodedUserCode, 7);
   const sketchUrl = new URL(baseUrl);
-  sketchUrl.searchParams.append("sketch", encodedUserCode);
+  sketchUrl.searchParams.append("sketch", enci ); // original const encodedusercode
 
   return sketchUrl;
 }
