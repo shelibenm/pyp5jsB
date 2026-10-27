@@ -6,3 +6,6 @@ def draw():
     diameter = sin(frameCount / 60) * 50 + 50
     fill("blue")
     ellipse(100, 100, diameter, diameter)
+    fill(23,30,45)
+    rect(30,50,89)
+    
